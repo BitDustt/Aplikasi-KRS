@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Class MataKuliah
+
 class MataKuliah {
     private String kode;
     private String nama;
@@ -21,7 +21,7 @@ class MataKuliah {
     }
 }
 
-// Class Mahasiswa
+
 class Mahasiswa {
     private String nim;
     private String nama;
@@ -33,7 +33,7 @@ class Mahasiswa {
     public Mahasiswa(String nim, String nama) {
         this.nim = nim;
         this.nama = nama;
-        this.krs = new MataKuliah[10]; // kapasitas maksimal 10 MK
+        this.krs = new MataKuliah[21]; 
     }
 
     public void tambahMataKuliah(MataKuliah mk) {
@@ -74,14 +74,14 @@ class Mahasiswa {
     }
 }
 
-// Class Main
+
 public class KRSApp {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
         System.out.println("=== Pengisian KRS Mahasiswa Sistem Informasi ===");
 
-        // Input NIM & Nama
+        
         System.out.print("Masukkan NIM   : ");
         String nim = input.nextLine();
 
